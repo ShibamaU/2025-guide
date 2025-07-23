@@ -1,0 +1,18 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* 管理項目-------------------------------------- */
+:root {
+    --main-color: #E9E0CE;
+    --second-color: #FBF7EE;
+    --sed-color:#B18A71;
+    --sed-color:#DBD3BF;
+}
