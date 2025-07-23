@@ -1,0 +1,39 @@
+:root {
+    --main-color: #E9E0CE;
+    --second-color: #FBF7EE;
+    --sed-color:#B18A71;
+    --sed-color:#DBD3BF;
+    --banner-color: #fbffc7;
+    --bg-color-rgba: 0, 104, 59;
+    /*anymore*/
+}
+.wait {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10% 0 10% 0;
+  background-color: #a5978e1e;
+}
+
+.wait h1 {
+  font-size: 3vw;
+
+  border-radius: 10px;
+}
+.watch {
+  width: 100%;
+  height: 20vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--sed-color);
+}
+
+.watch h1 {
+  font-size: 3vw;
+  text-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+}
+
+.margin1{
+  margin: 10%;
+}

@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap');
+
+* {
+    font-family: "Zen Kurenaido", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* 管理項目-------------------------------------- */
+:root {
+    --main-color: #E9E0CE;
+    --second-color: #FBF7EE;
+    --sed-color: #B18A71;
+    --sed-color: #DBD3BF;
+    --banner-color: #fbffc7;
+    --bg-color-rgba: 0, 104, 59;
+    /*anymore*/
+}
+
+html {
+    font-size: 62.5%;
+    filter: blur(0.4px);
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--main-color);
+    color: var(--secondary-color);
+}
+
+h1 {
+    font-size: 2vw;
+
+}
+
+header {
+    padding: 1% 5% 1% 5%;
+    position: sticky;
+    top: 0;
+    background-color: var(--banner-color);
+    z-index: 1;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    max-height: 10%;
+}
+
+nav ul {
+    padding: 2vw;
+    display: flex;
+    gap: 32px;
+}
+
+nav img {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+nav img:hover {
+    opacity: 0.5;
+}
+
+/*--------main 項目----------*/
+main {
+    padding: 5%;
+}
+
+.title_tops_section1 {
+    position: relative;
+    display: inline-block;
+}
+
+.title_tops_section1 img {
+    width: 100%;
+    height: auto;
+    border-radius: 50px;
+}
+
+.title_text_bike_section1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 255, 255);
+    /* テキスト色は必要に応じて */
+    font-size: 2.8vw;
+    font-weight: bold;
+
+}
+
+
+.bottom {
+    padding: 5%;
+}
+
+.bottom .title_tops_section1 {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+}
+
+.bottom .title_tops_section1 img {
+    display: block;
+    margin: 0 auto;
+    width: 25vw;
+    height: auto;
+    border-radius: 50px;
+}
+
+@media (max-width: 700px) {
+    .bottom .title_tops_section1 img {
+        display: block;
+        margin: 0 auto;
+        width: 40vw;
+        height: auto;
+        border-radius: 50px;
+    }
+}
+
+.bottom_banner {
+    width: 100%;
+    background-color: #FBF7EE;
+}
+
+.bottom_banner p {
+    display: flex;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    text-align: center;
+}
+
+
+.modal {
+    display: none;
+    /* 最初は非表示 */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+    display: block;
+    margin: 10% auto;
+    max-width: 90%;
+    max-height: 80%;
+    border-radius: 8px;
+}
+
+.close {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.modal-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
